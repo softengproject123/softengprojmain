@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #ageForm {
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"] + label {
+            display: inline-block;
+            padding: 8px 16px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+            background-color: #ddd;
+            border: 2px solid #bbb;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="ageForm">
+        <h1>Are you 18 years old?</h1>
+
+        <form id="ageForm">
+            <input type="radio" name="age" id="yes" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="age" id="no" value="no">
+            <label for="no">No</label>
+
+            <button type="button" onclick="checkAge()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function checkAge() {
+            var ageValue = document.querySelector('input[name="age"]:checked');
+
+            if (ageValue) {
+                if (ageValue.value === 'yes') {
+                    window.location.href = 'index.html';
+                } else if (ageValue.value === 'no') {
+                    window.location.href = 'sean.html';
+                }
+            } else {
+                alert('Please select an option.');
+            }
+        }
+    </script>
+
+</body>
+</html>

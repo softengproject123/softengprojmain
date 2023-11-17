@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+        <title>VAPE CATALOUGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="prompt.html"><img src="images/driphub_logo.png" alt></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>DRIPhub</h1>
+                <h2>Navigating the Cloud of Flavor in our online VAPE catslouge</h2>
+                <a href="" class="hero-btn"><b>View all Products</b></a>
+            </div>
+        </section>
+
+<!-----vape categories------>
+        <section class="categories">
+            <h1>VAPE Products</h1>
+            <p>vape products we offer</p>
+            <div class="row">
+                <div class="categories-col"><img src="images/categ_dispo.webp">
+                  <h3>DISPOSABLE</h3>
+                  <p>Know more about Disposable vapes</p>
+                  <a href=""><button>LEARN MORE</button></a>
+                </div>
+                <div class="categories-col"><img src="images/categ_mod.jpg">
+                  <h3>VAPE MODS</h3>
+                  <p>Know more about Vape mods</p>
+                  <a href=""><button>LEARN MORE</button></a>
+                </div>
+                <div class="categories-col"><img src="images/categ_pod.webp">
+                  <h3>PODS</h3>
+                  <p>Know more about Vape pods</p>
+                  <a href=""><button>LEARN MORE</button></a>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="categories-col"><img src="images/categ_auto.jpg">
+                  <h3>AUTOMIZERS</h3>
+                  <p>Know more about Vape automizes</p>
+                  <a href=""><button>LEARN MORE</button></a>
+                </div>
+                <div class="categories-col"><img src="images/categ_acce.webp">
+                  <h3>ACCESORIES</h3>
+                  <p>Know more about different accesories for vape</p>
+                  <a href=""><button>LEARN MORE</button></a>
+                </div>
+                <div class="categories-col"><img src="images/categ_flav.jpg">
+                  <h3>FLAVOUR JUICES</h3>
+                  <p>Know more about different Vape flavour or E-juices</p>
+                  <a href=""><button>LEARN MORE</button></a>
+                </div>
+                
+              </div>
+        </section>
+
+        <!------BEST SELLER------>
+        <section class="bestseller">
+            <h1>BEST SELLER</h1>
+            <p>Learn more about vape products.</p>
+            <div class="row">
+                    <div class="gallery">
+                        <div class="bestseller-col" onclick="showPopup('images/bestseller1.webp', 'FLAVA OXBAR Melon Yakult')">
+                          <img src="images/bestseller1.webp" alt="Image 1">
+                          
+                        </div>
+                        <div class="bestseller-col" onclick="showPopup('images/bestseller1.webp', 'vape mod')">
+                          <img src="images/bestseller2.webp" alt="Image 2">
+                        </div>
+                        <div class="bestseller-col" onclick="showPopup('images/bestseller1.webp', 'GEEKBAR MELOSO MAX Strawberry Ice')">
+                            <img src="images/bestseller3.webp" alt="Image 3">
+                        </div>
+                        
+                    </div>
+                    
+                    
+            </div>
+            <div class="row">
+                <div class="gallery">
+                    <div class="bestseller-col" onclick="showPopup('images/besttseller4_popup.jpg', 'FLAVA Magic Maze Pro')">
+                      <img src="images/bestseller4.jpg" alt="Image 1">
+                    </div>
+                    <div class="bestseller-col" onclick="showPopup('images/bestseller1.webp', 'vape mod')">
+                      <img src="images/mod.webp" alt="Image 2">
+                    </div>
+                    <div class="bestseller-col" onclick="showPopup('images/mod.webp', 'vape mod')">
+                        <img src="images/mod.webp" alt="Image 3">
+                    </div>
+               
+                
+        
+                <div id="popup" class="popup">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <img id="popup-image" src="" alt="Popup Image">
+                    <p id="popup-description"></p>
+                </div>
+                
+            </div>
+            
+            
+        </section>
+
+        <!---- testimonial -->
+
+    <section class="testimonials">
+        <h1>Reviews</h1>
+        <p>This is what our costumer says</p>
+        <div class="row">
+        <div class="testimonial-col">
+            <img src="images/pz1.jpg">
+            <div>
+            <h3>Princess Zhaine Due</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <p>Impressive customer service and high-quality products! The vape shop stood out 
+                for its friendly and helpful staff who guided me through their diverse range of 
+                e-liquids and devices. The atmosphere was welcoming, and I left with a top-notch 
+                vape setup. Highly recommend this shop to both beginners and experienced vapers.</p>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/jy.jpg">
+            <div>
+            <h3>Jayna Gwyneth Manlapaz</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <p>Fantastic variety and knowledgeable staff! The vape shop had an extensive selection 
+                of flavors and devices. The staff was patient and helped me find the perfect setup 
+                tailored to my preferences. Definitely my go-to spot for all things vape-related!</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div> 
+            <address>
+                Kalye onse pruk 5, <br>Angeles, 2009 Pampanga
+            </address>
+            <h4>&copy; 2023 DRIPhub. All rights reserved</h4>
+                <h4>Visit our Social Media accounts</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/Rapedu"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+        </div>
+        
+    </section>
+
+
+
+        <!-----JavaScript------->
+        <script>
+            alert("Warning: this product conatians nicotione: Strictly for 18 years old or above");
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+            navLinks.style.right = "0";
+            }
+            function hideMenu() {
+            navLinks.style.right = "-200px";
+            }
+
+            function showPopup(imageSrc, description) {
+            var popup = document.getElementById('popup');
+            var popupImage = document.getElementById('popup-image');
+            var popupDescription = document.getElementById('popup-description');
+            popupImage.src = imageSrc;
+            popupDescription.textContent = description;
+            popup.style.display = 'block';
+            }
+            function closePopup() {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+            }
+        </script>
+    </body>
+
+    
+</html>
